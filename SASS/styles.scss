@@ -3,43 +3,72 @@ $barbie-pink: #EE49B5;
 
 body{
     margin: 0;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     display: flex;
     header{
         width: 100vw;
-        height: 8vw;
+        height: 6vw;
         display: flex;
+        border-bottom: solid black 1px;
         .head-container{
             width: 98vw;
-            height: 8vw;
+            height: 5vw;
             background-color: white;
             margin: auto;
             display: flex;
             .images{
                 display: flex;
-                width: 58vw;
-                padding-top: .5vw;
+                width: 35vw;
                 #badge{
-                    height: 7vw;
-                    width: 7vw;
-                    padding-right: 2vw;
+                    height: 4.5vw;
+                    width: 4.5vw;
+                    padding: 0 0 0 10px;
                     margin: auto;
                 }
                 #text{
                     width: auto;
-                    height: 7vw;
+                    height: 4.5vw;
                     margin: auto;
                 }
             }
-            button{
-                height: 4vw;
-                width: 4vw;
+            #hamburger{
+                display: flex;
+                margin-left: auto;
+                height: auto;
+                width: auto;
                 color: $rose-pink;
                 background-color: white;
                 border: none;
                 font-size: 3vw;
                 transform: rotate(90deg);
+                padding-top: 2vw;
+                cursor: pointer;
+            }
+            .dropped{
+                position: absolute;
+                width: auto;
+                height: 6vw;
+                font-size: 1.5vw;
+                border: 2px solid $rose-pink;
+                left: 89.3vw;
+                margin-top: 3.5vw;
+                flex-direction: column;
+                span{
+                    height: 2vw;
+                    width: 8vw;
+                    display: flex;
+                    margin: auto;
+                    color: black;
+                    text-align: center;
+                    align-items: center;
+                }
+                :nth-child(1){
+                    border-top: $rose-pink solid 1px;
+                }
+                :nth-child(2){
+                    border-top: $rose-pink solid 1px;
+                }
             }  
         }
     }
