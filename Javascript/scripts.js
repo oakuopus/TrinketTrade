@@ -1,6 +1,6 @@
 $(function() {
-    $(".dropped").fadeTo(0, 0);
+    $(".dropped").slideUp(0);
     $("#hamburger").on("click", function(){
-        $(".dropped").fadeTo(0, 1);
+        $(".dropped").slideToggle("slow");
     });
 });
