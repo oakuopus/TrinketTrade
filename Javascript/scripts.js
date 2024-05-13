@@ -16,10 +16,10 @@ $(function() {
         });
         }   
     });
-});
-function reload() {
+    function reload() {
     location.reload();
 }
 function home() {
     window.location.href = "./index.html";
 }
+});
