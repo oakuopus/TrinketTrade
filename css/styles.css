@@ -23,6 +23,9 @@ body header .head-container .images {
   display: flex;
   width: 30vh;
 }
+body header .head-container .images :hover {
+  cursor: pointer;
+}
 body header .head-container .images #badge {
   height: 7vh;
   width: 7vh;

@@ -20,6 +20,9 @@ body{
             margin: auto;
             display: flex;
             .images{
+                :hover {
+                    cursor: pointer;
+                }
                 display: flex;
                 width: 30vh;
                 #badge{
