@@ -1,0 +1,95 @@
+$rose-pink: #FF0F80;
+$barbie-pink: #EE49B5;
+html {
+    background-color: #f2f3eb;
+}
+body{
+    margin: 0;
+    color: black;
+    background-color: white;
+    overflow-x: hidden;
+    header{
+        z-index: 0;
+        width: 100vw;
+        height: 9vh;
+        border-bottom: solid $rose-pink 1px;
+        position: sticky;
+        top: 0;
+        z-index: 11;
+        transition: .3s;
+        .head-container{
+            width: 100vw;
+            height: 9vh;
+            margin: auto;
+            display: flex;
+            .images{
+                :hover {
+                    cursor: pointer;
+                }
+                display: flex;
+                width: 30vh;
+                #badge{
+                    height: 7vh;
+                    width: 7vh;
+                    padding: 0 0 0 10px;
+                    margin: auto;
+                }
+                #text{
+                    width: auto;
+                    height: 7vh;
+                    margin: auto;
+                }
+            }
+            #hamburger{
+                display: flex;
+                margin-left: auto;
+                height: auto;
+                width: auto;
+                color: $rose-pink;
+                border: none;
+                background-color: white;
+                font-size: 5vh;
+                transform: rotate(90deg);
+                padding-top: 2vw;
+                cursor: pointer;
+                overflow: none;
+                transition: .3s;
+            }
+            .dropped{
+                z-index: 10;
+                position: absolute;
+                width: auto;
+                height: auto;
+                font-size: 2vw;
+                border: 2px solid $rose-pink;
+                left: 86.2vw;
+                top: 3.18vw;
+                flex-direction: column;
+                border-top-left-radius: 10%;
+                border-bottom-left-radius: 10%;
+                border-bottom-right-radius: 10%;
+                background-color: rgba(255, 255, 255, .9);
+                span{
+                    height: 2vw;
+                    width: auto;
+                    display: flex;
+                    margin: auto;
+                    color: black;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                :nth-child(2){
+                    border-top: $rose-pink solid 1px;
+                }
+                :nth-child(3){
+                    border-top: $rose-pink solid 1px;
+                }
+            }  
+        }
+    }
+}
