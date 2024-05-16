@@ -11,10 +11,76 @@
     <meta property="og:description" content="">
 
     <title>TT | Shopping</title>
-    <link rel = "stylesheet" href="./css/styles.css">
+    <link rel = "stylesheet" href="./css/shop.css">
     <link rel = "shortcut icon" href="#" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <div class="head-container">
+            <div class="images">
+                <img id="badge" src="./assets/badge logo.png" alt="TrinketTrade Logo" onclick="home()"><a href="./index.html"></a>
+                <img id="text" src="./assets/logo final.png" alt="Text Logo" onclick="home()"><a href="./index.html"></a>
+            </div>
+            <button id="hamburger">|||</button>
+            <div class="dropped">
+                <span id="shop"><a href="./shop.html">Shop</a></span>
+                <span id="contact-us"><a href="./faqcontact.html">Contact/FAQ</a></span>
+                <span id="about-us"><a href="#">About Us</a></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hotspot">
+            <div class="hotspot-head">
+                <div class="hotspottxt">The Hot Spot</div>
+                <div class="timer" class="timer">
+                    <div id="days">7:</div>
+                    <div id="hours">24:</div>
+                    <div id="minutes">60</div>
+                </div>
+            </div>
+            <section class="selling-container">
+                <div class="sell-cont-left">
+                    <img src="./assets/badge logo.png" alt="">
+                    <div class="info-cont">
+                        <div class="info">
+                            <div id="price">$2300</div>
+                            <input type="number">
+                            <button>BID</button>
+                            <div class="past-bids">
+                                Jason: 0<br><br>
+                                Mike: 0<br><br>
+                                Singham: 0<br><br>
+                                kim: 0<br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, qui!
+                </div>
+
+                <div class="sell-cont-right">
+                    <div class="info-cont">
+                        <div class="info">
+                            <div id="price">$2300</div>
+                            <input type="number">
+                            <button>BID</button>
+                            <div class="past-bids">
+                                Jason: 0<br><br>
+                                Mike: 0<br><br>
+                                Singham: 0<br><br>
+                                kim: 0<br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/badge logo.png" alt="">
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./Javascript/scripts.js"></script>
 </body>
 </html>
