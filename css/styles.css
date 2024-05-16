@@ -1,7 +1,7 @@
 body {
   margin: 0;
   color: black;
-  background-color: white;
+  background-color: #F2F3EB;
   overflow-x: hidden;
 }
 body header {
@@ -38,19 +38,17 @@ body header .head-container .images #text {
   margin: auto;
 }
 body header .head-container #hamburger {
-  display: flex;
   margin-left: auto;
   height: auto;
   width: auto;
   color: #FF0F80;
   border: none;
-  background-color: white;
   font-size: 5vh;
   transform: rotate(90deg);
   padding-top: 2vw;
   cursor: pointer;
   overflow: none;
-  transition: 0.3s;
+  background-color: transparent;
 }
 body header .head-container .dropped {
   z-index: 10;
@@ -88,10 +86,10 @@ body header .head-container .dropped :nth-child(3) {
   border-top: #FF0F80 solid 1px;
 }
 body main .marquee:first-of-type {
-  margin: 8vh 0 3vh 0;
+  margin: 7vh 0 3vh 0;
 }
 body main .marquee:last-of-type {
-  margin: 3vh 0 8vh 0;
+  margin: 3vh 0 7vh 0;
 }
 body main .marquee-top, body main .marquee-btm {
   width: 100vw;

@@ -45,7 +45,7 @@ body{
                 border: none;
                 font-size: 5vh;
                 transform: rotate(90deg);
-                padding-top: 2vw;
+                padding-top: 3vw;
                 cursor: pointer;
                 overflow: none;
                 background-color: transparent;
@@ -88,94 +88,78 @@ body{
         }
     }
     main{
-        .marquee:first-of-type{
-            margin: 7vh 0 3vh 0;
-        }
-        .marquee:last-of-type{
-            margin: 3vh 0 7vh 0;
-        }
-        .marquee-top, .marquee-btm{
-            width: 100vw;
-            height: auto;
-            border: $rose-pink 1px solid;
-            overflow: hidden;
-            white-space: nowrap;
-            .marquee-content{
-                width: auto;
-                height: auto;
-                margin: .5vw 0;
-                animation: marquee infinite linear 25s;
-                display: inline-block;
-                img{
-                    width: 28vh;
-                    height: 28vh;
-                    margin: 0 1rem;
-                } 
-            }
-        }
-        .button-container{
-            height: 10vh;
-            display: flex;
-            #button{
-                width: 94vw;
-                margin: auto;
-                height: 9vh;
-                display: flex;
-                justify-content: space-between;
-                border: none;
-                background-color: $rose-pink;
-                opacity: 80%;
-                cursor: pointer;
-                span{
+        width: 90vw;
+        margin: auto;
+        .hotspot{
+            height: 64vh;
+            width: 90vw;
+            padding-bottom: 2vh;
+            border-bottom: $rose-pink 2px solid;
+            .hotspot-head{
+                height: 14vh;
+                background-color: #F2F3EB;
+                text-align: center;
+                .hotspottxt{
+                    padding: 10px 4rem;
+                    background-color: $rose-pink;
+                    font-size: 2.6vw;
+                    width: 15vw;
                     margin: auto;
+                    margin-top: 1rem;
+                    color: white;
+                }
+                .timer{
+                    display: flex;
+                    height: auto;
                     font-size: 2vw;
+                    justify-content: center;
+                    margin-top: 8px;
+                    *{
+                        margin-right: 6px;
+                    }
                 }
-                span:nth-child(1){
-                    padding-left: 1rem;
+            }
+            .selling-container{
+                width: 80vw;
+                height: 50vh;
+                margin: auto;
+                background-color: white;
+                display: flex;
+                .sell-cont-left, .sell-cont-right{
+                    float: left;
+                    width: 35vw;
+                    height: 50vh;
+                    display: flex;
+                    img{
+                        width: 25vw;
+                        height: 50vh;
+                    }
+                    .info-cont{
+                        width: 10vw;
+                        .info{
+                            width: 8vw;
+                            margin: 0 1vw;
+                            text-align: center;
+                            font-size: 2vh;
+                            *{
+                                margin-top: 6vh;
+                            }
+                            input{
+                                width: 8vw;
+                            }
+                            #price{
+                                margin-top: 4vh;
+                            }
+                        }
+                    }
                 }
-                span:nth-child(3){
-                    padding-right: 1rem;
+                .description{
+                    width: 8vw;
+                    font-size: 2vw;
+                    height: auto;
+                    margin: 1vw;
                 }
             }
         }
-        .marquee-btm{
-            .marquee-content{
-                animation: marqueeR infinite linear 25s;
-            }
-        }
-    }
-    footer{
-        border-top: 2px solid $rose-pink;
-        .container{
-            padding: 8px;
-            justify-content: space-between;
-            display: flex;
-            width: 85vw;
-            margin: auto;
-            span{
-                font-size: 2vw;
-                align-content: center;
-            }
-            img{
-                height: 8vh;
-                width: 8vh;
-            }
-        }
-    }
-}
-@keyframes marquee{
-    from{
-        transform: translateX(0%);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
-@keyframes marqueeR{
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0%);
     }
 }
