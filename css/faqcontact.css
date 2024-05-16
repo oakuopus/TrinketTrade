@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 body header {
+  z-index: 0;
   width: 100vw;
   height: 9vh;
   border-bottom: solid #FF0F80 1px;
@@ -93,11 +94,12 @@ body header .head-container .dropped :nth-child(3) {
 
 .verticalLine {
   border-left: 0.1vw solid #FF0F80;
-  height: 93%;
+  height: 126%;
   position: absolute;
   left: 50%;
   margin-left: -3px;
   top: 2;
+  z-index: -1;
 }
 
 .grid {
@@ -114,12 +116,6 @@ body header .head-container .dropped :nth-child(3) {
 .leftGrid {
   grid-column: f/s;
   grid-row: first/end;
-}
-
-html {
-  font-family: "Montserrat", Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -149,10 +145,12 @@ textarea {
 }
 
 #container {
-  border: solid 3px #474544;
+  border: solid 0.4vh #474544;
   max-width: 768px;
   margin: 60px auto;
   position: relative;
+  width: 40vw;
+  margin-top: 0;
 }
 
 form {
@@ -162,7 +160,7 @@ form {
 
 h1.container {
   color: #474544;
-  font-size: 32px;
+  font-size: 5px;
   font-weight: 700;
   letter-spacing: 7px;
   text-align: center;
@@ -252,7 +250,7 @@ select::-ms-expand {
 
 textarea {
   line-height: 150%;
-  height: 150px;
+  height: 20vh;
   resize: none;
   width: 100%;
 }
@@ -435,4 +433,23 @@ a:hover {
 code {
   font-family: monospace;
   font-weight: 600;
+}
+
+footer {
+  border-top: 2px solid #FF0F80;
+}
+footer .container {
+  padding: 8px;
+  justify-content: space-between;
+  display: flex;
+  width: 85vw;
+  margin: auto;
+}
+footer .container span {
+  font-size: 2vw;
+  align-content: center;
+}
+footer .container img {
+  height: 8vh;
+  width: 8vh;
 }/*# sourceMappingURL=faqcontact.css.map */

@@ -6,6 +6,7 @@ body{
     background-color: white;
     overflow-x: hidden;
     header{
+        z-index: 0;
         width: 100vw;
         height: 9vh;
         border-bottom: solid $rose-pink 1px;
@@ -91,11 +92,12 @@ body{
 }
 .verticalLine {
     border-left: 0.1vw solid $rose-pink;
-    height: 93%;
+    height: 126%;
     position: absolute;
     left: 50%;
     margin-left: -3px;
     top: 2;
+    z-index: -1;
 }
   
 .grid {
@@ -117,11 +119,6 @@ body{
 //CODE PROVIDED
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html {
-  font-family: 'Montserrat', Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
 body {
   background: #F2F3EB;
@@ -150,10 +147,12 @@ textarea {
 }
 
 #container {
-  border: solid 3px #474544;
+  border: solid 0.4vh #474544;
   max-width: 768px;
   margin: 60px auto;
   position: relative;
+  width: 40vw;
+  margin-top: 0;
 }
 
 form {
@@ -163,7 +162,7 @@ form {
 
 h1.container {
   color: #474544;
-  font-size: 32px;
+  font-size: 5px;
   font-weight: 700;
   letter-spacing: 7px;
   text-align: center;
@@ -253,7 +252,7 @@ select::-ms-expand {
 
 textarea {
 	line-height: 150%;
-	height: 150px;
+	height: 20vh;
 	resize: none;
   width: 100%;
 }
@@ -447,4 +446,22 @@ a:hover {
 code {
 	font-family: monospace;
 	font-weight: 600;
+}
+footer{
+  border-top: 2px solid $rose-pink;
+  .container{
+      padding: 8px;
+      justify-content: space-between;
+      display: flex;
+      width: 85vw;
+      margin: auto;
+      span{
+          font-size: 2vw;
+          align-content: center;
+      }
+      img{
+          height: 8vh;
+          width: 8vh;
+      }
+  }
 }
