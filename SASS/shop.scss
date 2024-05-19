@@ -88,22 +88,23 @@ body{
         }
     }
     main{
-        width: 90vw;
+        width: 100vw;
         margin: auto;
         .hotspot{
-            height: 64vh;
-            width: 90vw;
-            padding-bottom: 2vh;
+            width: 80vw;
             border-bottom: $rose-pink 2px solid;
+            background-color: black;
+            color: #F2F3EB;
+            margin: auto;
             .hotspot-head{
                 height: 14vh;
                 background-color: #F2F3EB;
                 text-align: center;
                 .hotspottxt{
-                    padding: 10px 4rem;
+                    padding: 2px 4rem;
                     background-color: $rose-pink;
-                    font-size: 2.6vw;
-                    width: 15vw;
+                    font-size: 2.2vw;
+                    width: 12vw;
                     margin: auto;
                     margin-top: 1rem;
                     color: white;
@@ -114,6 +115,7 @@ body{
                     font-size: 2vw;
                     justify-content: center;
                     margin-top: 8px;
+                    color: black;
                     *{
                         margin-right: 6px;
                     }
@@ -121,18 +123,15 @@ body{
             }
             .selling-container{
                 width: 80vw;
-                height: 50vh;
-                margin: auto;
-                background-color: white;
                 display: flex;
                 .sell-cont-left, .sell-cont-right{
                     float: left;
                     width: 35vw;
-                    height: 50vh;
                     display: flex;
                     img{
                         width: 25vw;
-                        height: 50vh;
+                        height: 25vw;
+                        align-self: center;
                     }
                     .info-cont{
                         width: 10vw;
@@ -140,7 +139,7 @@ body{
                             width: 8vw;
                             margin: 0 1vw;
                             text-align: center;
-                            font-size: 2vh;
+                            font-size: 1.3vw;
                             *{
                                 margin-top: 6vh;
                             }
@@ -155,9 +154,62 @@ body{
                 }
                 .description{
                     width: 8vw;
-                    font-size: 2vw;
+                    font-size: 1.5vw;
                     height: auto;
-                    margin: 1vw;
+                    padding: 1vw;
+                    align-self: center;
+                    text-align: center;
+                    border-left: 1px dashed $rose-pink;
+                    border-right: 1px dashed $rose-pink;
+                    a{
+                        color: $rose-pink;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .border{
+            width: 100vw;
+            height: 8vh;
+            border-bottom: 2px solid $rose-pink;
+            margin-bottom: 2vh;
+        }
+        .shop-container{
+            width: 90vw;
+            margin: auto;
+            border-left: 2px solid $rose-pink;
+            border-right: 2px solid $rose-pink;
+            .shop-head{
+                height: 14vh;
+                margin: auto;
+                width: auto;
+                .all-products{
+                    padding: 2px 4rem;
+                    background-color: $rose-pink;
+                    font-size: 2vw;
+                    width: 10.2vw;
+                    margin: auto;
+                    margin-top: 1rem;
+                    color: white;
+                }
+                .shop-description{
+                    padding: 10px 4rem;
+                    font-size: 1vw;
+                    margin: auto;
+                    margin-top: 1rem;
+                    color: black;
+                    text-align: center;
+                }
+            }
+            .grid{
+                margin: auto;
+                display: grid;
+                width: 80vw;
+                gap: 1rem;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                .item-cont{
+
                 }
             }
         }
