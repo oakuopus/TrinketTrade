@@ -86,14 +86,15 @@ body header .head-container .dropped :nth-child(3) {
   border-top: #FF0F80 solid 1px;
 }
 body main {
-  width: 90vw;
+  width: 100vw;
   margin: auto;
 }
 body main .hotspot {
-  height: 64vh;
-  width: 90vw;
-  padding-bottom: 2vh;
+  width: 80vw;
   border-bottom: #FF0F80 2px solid;
+  background-color: black;
+  color: #F2F3EB;
+  margin: auto;
 }
 body main .hotspot .hotspot-head {
   height: 14vh;
@@ -101,10 +102,10 @@ body main .hotspot .hotspot-head {
   text-align: center;
 }
 body main .hotspot .hotspot-head .hotspottxt {
-  padding: 10px 4rem;
+  padding: 2px 4rem;
   background-color: #FF0F80;
-  font-size: 2.6vw;
-  width: 15vw;
+  font-size: 2.2vw;
+  width: 12vw;
   margin: auto;
   margin-top: 1rem;
   color: white;
@@ -115,26 +116,24 @@ body main .hotspot .hotspot-head .timer {
   font-size: 2vw;
   justify-content: center;
   margin-top: 8px;
+  color: black;
 }
 body main .hotspot .hotspot-head .timer * {
   margin-right: 6px;
 }
 body main .hotspot .selling-container {
   width: 80vw;
-  height: 50vh;
-  margin: auto;
-  background-color: white;
   display: flex;
 }
 body main .hotspot .selling-container .sell-cont-left, body main .hotspot .selling-container .sell-cont-right {
   float: left;
   width: 35vw;
-  height: 50vh;
   display: flex;
 }
 body main .hotspot .selling-container .sell-cont-left img, body main .hotspot .selling-container .sell-cont-right img {
   width: 25vw;
-  height: 50vh;
+  height: 25vw;
+  align-self: center;
 }
 body main .hotspot .selling-container .sell-cont-left .info-cont, body main .hotspot .selling-container .sell-cont-right .info-cont {
   width: 10vw;
@@ -143,7 +142,7 @@ body main .hotspot .selling-container .sell-cont-left .info-cont .info, body mai
   width: 8vw;
   margin: 0 1vw;
   text-align: center;
-  font-size: 2vh;
+  font-size: 1.3vw;
 }
 body main .hotspot .selling-container .sell-cont-left .info-cont .info *, body main .hotspot .selling-container .sell-cont-right .info-cont .info * {
   margin-top: 6vh;
@@ -156,7 +155,57 @@ body main .hotspot .selling-container .sell-cont-left .info-cont .info #price, b
 }
 body main .hotspot .selling-container .description {
   width: 8vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
   height: auto;
-  margin: 1vw;
-}/*# sourceMappingURL=shop.css.map */
+  padding: 1vw;
+  align-self: center;
+  text-align: center;
+  border-left: 1px dashed #FF0F80;
+  border-right: 1px dashed #FF0F80;
+}
+body main .hotspot .selling-container .description a {
+  color: #FF0F80;
+  text-decoration: none;
+}
+body main .border {
+  width: 100vw;
+  height: 8vh;
+  border-bottom: 2px solid #FF0F80;
+  margin-bottom: 2vh;
+}
+body main .shop-container {
+  width: 90vw;
+  margin: auto;
+  border-left: 2px solid #FF0F80;
+  border-right: 2px solid #FF0F80;
+}
+body main .shop-container .shop-head {
+  height: 14vh;
+  margin: auto;
+  width: auto;
+}
+body main .shop-container .shop-head .all-products {
+  padding: 2px 4rem;
+  background-color: #FF0F80;
+  font-size: 2vw;
+  width: 10.2vw;
+  margin: auto;
+  margin-top: 1rem;
+  color: white;
+}
+body main .shop-container .shop-head .shop-description {
+  padding: 10px 4rem;
+  font-size: 1vw;
+  margin: auto;
+  margin-top: 1rem;
+  color: black;
+  text-align: center;
+}
+body main .shop-container .grid {
+  margin: auto;
+  display: grid;
+  width: 80vw;
+  gap: 1rem;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
