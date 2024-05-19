@@ -94,7 +94,7 @@ body header .head-container .dropped :nth-child(3) {
 
 .verticalLine {
   border-left: 0.1vw solid #FF0F80;
-  height: 126%;
+  height: 1%;
   position: absolute;
   left: 50%;
   margin-left: -3px;
