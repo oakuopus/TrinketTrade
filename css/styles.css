@@ -45,7 +45,7 @@ body header .head-container #hamburger {
   border: none;
   font-size: 5vh;
   transform: rotate(90deg);
-  padding-top: 2vw;
+  padding-top: 3vw;
   cursor: pointer;
   overflow: none;
   background-color: transparent;
@@ -57,8 +57,8 @@ body header .head-container .dropped {
   height: auto;
   font-size: 2vw;
   border: 2px solid #FF0F80;
-  left: 86.2vw;
-  top: 3.18vw;
+  left: 86.55vw;
+  top: 6vh;
   flex-direction: column;
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
@@ -87,14 +87,15 @@ body header .head-container .dropped :nth-child(3) {
 }
 body main .marquee:first-of-type {
   margin: 7vh 0 3vh 0;
+  border-top: 2px #FF0F80 solid;
 }
 body main .marquee:last-of-type {
   margin: 3vh 0 7vh 0;
+  border-bottom: 2px #FF0F80 solid;
 }
 body main .marquee-top, body main .marquee-btm {
   width: 100vw;
   height: auto;
-  border: #FF0F80 1px solid;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -114,47 +115,84 @@ body main .button-container {
   height: 10vh;
   display: flex;
 }
-body main .button-container #button {
-  width: 94vw;
+body main .button-container button {
+  width: 80vw;
+  height: 10vh;
   margin: auto;
-  height: 9vh;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-  background-color: #FF0F80;
-  opacity: 80%;
-  cursor: pointer;
-}
-body main .button-container #button span {
-  margin: auto;
+  border-radius: 30em;
   font-size: 2vw;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #FF0F80, -3px -3px 5px #FF0F80;
 }
-body main .button-container #button span:nth-child(1) {
-  padding-left: 1rem;
+body main .button-container button::before {
+  content: "";
+  width: 0;
+  height: 10.2vh;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #FF0F80 0%, #EE49B5 100%);
+  transition: 2s ease;
+  display: block;
+  z-index: -1;
 }
-body main .button-container #button span:nth-child(3) {
-  padding-right: 1rem;
+body main .button-container button:hover::before {
+  width: 80vw;
+}
+body main .button-container button a {
+  width: 80vw;
+  height: 10vh;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+body main .button-container button a span {
+  padding: 0 10vw;
 }
 body main .marquee-btm .marquee-content {
   animation: marqueeR infinite linear 25s;
 }
 body footer {
   border-top: 2px solid #FF0F80;
+  background-color: #414A4C;
+  padding: 2vh 0;
 }
-body footer .container {
-  padding: 8px;
-  justify-content: space-between;
+body footer .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 85vw;
   margin: auto;
+  padding: 2vh 0;
 }
-body footer .container span {
-  font-size: 2vw;
-  align-content: center;
+body footer .footer-container .social-media {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 2vh;
 }
-body footer .container img {
-  height: 8vh;
-  width: 8vh;
+body footer .footer-container .social-media img {
+  height: 6vh;
+  width: 6vh;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+body footer .footer-container .social-media img:hover {
+  transform: scale(1.1);
+}
+body footer .footer-container .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body footer .footer-container .footer-info span {
+  font-size: 1.5vw;
+  margin: 0.5vh 0;
 }
 
 @keyframes marquee {

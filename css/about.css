@@ -9,7 +9,6 @@ body {
   overflow-x: hidden;
 }
 body header {
-  z-index: 0;
   width: 100vw;
   height: 9vh;
   border-bottom: solid #FF0F80 1px;
@@ -43,19 +42,17 @@ body header .head-container .images #text {
   margin: auto;
 }
 body header .head-container #hamburger {
-  display: flex;
   margin-left: auto;
   height: auto;
   width: auto;
   color: #FF0F80;
   border: none;
-  background-color: white;
   font-size: 5vh;
   transform: rotate(90deg);
-  padding-top: 2vw;
+  padding-top: 3vw;
   cursor: pointer;
   overflow: none;
-  transition: 0.3s;
+  background-color: transparent;
 }
 body header .head-container .dropped {
   z-index: 10;
@@ -64,8 +61,8 @@ body header .head-container .dropped {
   height: auto;
   font-size: 2vw;
   border: 2px solid #FF0F80;
-  left: 86.2vw;
-  top: 3.18vw;
+  left: 86.55vw;
+  top: 6vh;
   flex-direction: column;
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
@@ -223,19 +220,38 @@ body {
 }
 footer {
   border-top: 2px solid #FF0F80;
+  background-color: #414A4C;
+  padding: 2vh 0;
 }
-footer .container {
-  padding: 8px;
-  justify-content: space-between;
+footer .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 85vw;
   margin: auto;
+  padding: 2vh 0;
 }
-footer .container span {
-  font-size: 2vw;
-  align-content: center;
+footer .footer-container .social-media {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 2vh;
 }
-footer .container img {
-  height: 8vh;
-  width: 8vh;
-}/*# sourceMappingURL=about.css.map */
+footer .footer-container .social-media img {
+  height: 6vh;
+  width: 6vh;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+footer .footer-container .social-media img:hover {
+  transform: scale(1.1);
+}
+footer .footer-container .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .footer-container .footer-info span {
+  font-size: 1.5vw;
+  margin: 0.5vh 0;
+}

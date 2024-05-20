@@ -57,8 +57,8 @@ body header .head-container .dropped {
   height: auto;
   font-size: 2vw;
   border: 2px solid #FF0F80;
-  left: 86.2vw;
-  top: 3.18vw;
+  left: 86.55vw;
+  top: 6vh;
   flex-direction: column;
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
@@ -91,7 +91,6 @@ body main {
 }
 body main .hotspot {
   width: 80vw;
-  border-bottom: #FF0F80 2px solid;
   background-color: black;
   color: #F2F3EB;
   margin: auto;
@@ -124,6 +123,7 @@ body main .hotspot .hotspot-head .timer * {
 body main .hotspot .selling-container {
   width: 80vw;
   display: flex;
+  max-height: 650px;
 }
 body main .hotspot .selling-container .sell-cont-left, body main .hotspot .selling-container .sell-cont-right {
   float: left;
@@ -137,6 +137,7 @@ body main .hotspot .selling-container .sell-cont-left img, body main .hotspot .s
 }
 body main .hotspot .selling-container .sell-cont-left .info-cont, body main .hotspot .selling-container .sell-cont-right .info-cont {
   width: 10vw;
+  overflow: none;
 }
 body main .hotspot .selling-container .sell-cont-left .info-cont .info, body main .hotspot .selling-container .sell-cont-right .info-cont .info {
   width: 8vw;
@@ -144,14 +145,27 @@ body main .hotspot .selling-container .sell-cont-left .info-cont .info, body mai
   text-align: center;
   font-size: 1.3vw;
 }
+body main .hotspot .selling-container .sell-cont-left .info-cont .info button, body main .hotspot .selling-container .sell-cont-right .info-cont .info button {
+  border: none;
+  color: black;
+  background-color: #FF0F80;
+  width: 6vw;
+  height: 4vh;
+  border-radius: 20%;
+  cursor: pointer;
+  font-size: 1.5vw;
+  box-shadow: 3px 3px 5px #FF0F80;
+}
 body main .hotspot .selling-container .sell-cont-left .info-cont .info *, body main .hotspot .selling-container .sell-cont-right .info-cont .info * {
-  margin-top: 6vh;
+  margin-top: 4vh;
 }
 body main .hotspot .selling-container .sell-cont-left .info-cont .info input, body main .hotspot .selling-container .sell-cont-right .info-cont .info input {
   width: 8vw;
 }
-body main .hotspot .selling-container .sell-cont-left .info-cont .info #price, body main .hotspot .selling-container .sell-cont-right .info-cont .info #price {
-  margin-top: 4vh;
+body main .hotspot .selling-container .sell-cont-left .info-cont .info #price-left, body main .hotspot .selling-container .sell-cont-left .info-cont .info #price-right, body main .hotspot .selling-container .sell-cont-right .info-cont .info #price-left, body main .hotspot .selling-container .sell-cont-right .info-cont .info #price-right {
+  margin-top: 2vh;
+  font-weight: 700;
+  font-size: 2vw;
 }
 body main .hotspot .selling-container .description {
   width: 8vw;
@@ -220,30 +234,62 @@ body main .shop-container .grid .item-cont img {
   height: 22vw;
   padding: 0.5vw;
   margin: 1vw;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 body main .shop-container .grid .item-cont .info-bar {
   display: flex;
   justify-content: space-between;
-  width: 18vw;
+  width: 20vw;
   margin: auto;
   font-size: 2vw;
+  margin-bottom: 1vh;
+}
+body main .shop-container .grid .item-cont .info-bar .specs {
+  font-size: 1.5vw;
+  align-self: center;
+}
+body main .shop-container .grid .item-cont .info-bar #buy-btn {
+  cursor: pointer;
+  background-color: black;
+  color: #FF0F80;
+  border: none;
+  padding: 0 20px;
+  border-radius: 20%;
 }
 body footer {
   border-top: 2px solid #FF0F80;
+  background-color: #414A4C;
+  padding: 2vh 0;
 }
-body footer .container {
-  padding: 8px;
-  justify-content: space-between;
+body footer .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 85vw;
   margin: auto;
+  padding: 2vh 0;
 }
-body footer .container span {
-  font-size: 2vw;
-  align-content: center;
+body footer .footer-container .social-media {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 2vh;
 }
-body footer .container img {
-  height: 8vh;
-  width: 8vh;
+body footer .footer-container .social-media img {
+  height: 6vh;
+  width: 6vh;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+body footer .footer-container .social-media img:hover {
+  transform: scale(1.1);
+}
+body footer .footer-container .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body footer .footer-container .footer-info span {
+  font-size: 1.5vw;
+  margin: 0.5vh 0;
 }
