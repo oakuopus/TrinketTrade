@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myFont;
+  src: url(/Voguella.ttf);
+}
+html {
+  font-family: myFont;
+}
+
 body {
   margin: 0;
   color: black;
@@ -159,8 +167,9 @@ body main .marquee-btm .marquee-content {
 }
 body footer {
   border-top: 2px solid #FF0F80;
-  background-color: #414A4C;
+  background-color: black;
   padding: 2vh 0;
+  color: #EE49B5;
 }
 body footer .footer-container {
   display: flex;
@@ -210,4 +219,4 @@ body footer .footer-container .footer-info span {
   to {
     transform: translateX(0%);
   }
-}
+}/*# sourceMappingURL=styles.css.map */

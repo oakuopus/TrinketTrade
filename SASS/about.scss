@@ -1,7 +1,12 @@
 $rose-pink: #FF0F80;
 $barbie-pink: #EE49B5;
+@font-face {
+  font-family: myFont;
+  src: url(/Voguella.ttf);
+}
 html {
     background-color: #f2f3eb;
+    font-family: myFont;
 }
 body{
   margin: 0;
@@ -112,7 +117,7 @@ $content-width: 450px;
 
 body{
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  // font-family: 'Lato', sans-serif;
 }
 
 .timeline{
@@ -250,8 +255,9 @@ body{
 
 footer {
   border-top: 2px solid $rose-pink;
-  background-color: #414A4C;
-  padding: 2vh 0;
+        background-color: black;
+        padding: 2vh 0;
+        color:$barbie-pink;
   .footer-container {
       display: flex;
       flex-direction: column;

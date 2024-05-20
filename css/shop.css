@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myFont;
+  src: url(/Voguella.ttf);
+}
+html {
+  font-family: myFont;
+}
+
 body {
   margin: 0;
   color: black;
@@ -103,7 +111,7 @@ body main .hotspot .hotspot-head {
 body main .hotspot .hotspot-head .hotspottxt {
   padding: 2px 4rem;
   background-color: #FF0F80;
-  font-size: 2.2vw;
+  font-size: 2.1vw;
   width: 12vw;
   margin: auto;
   margin-top: 1rem;
@@ -202,7 +210,7 @@ body main .shop-container .shop-head {
 body main .shop-container .shop-head .all-products {
   padding: 2px 4rem;
   background-color: #FF0F80;
-  font-size: 2vw;
+  font-size: 1.8vw;
   width: 10.2vw;
   margin: auto;
   margin-top: 1rem;
@@ -258,8 +266,9 @@ body main .shop-container .grid .item-cont .info-bar #buy-btn {
 }
 body footer {
   border-top: 2px solid #FF0F80;
-  background-color: #414A4C;
+  background-color: black;
   padding: 2vh 0;
+  color: #EE49B5;
 }
 body footer .footer-container {
   display: flex;
@@ -292,4 +301,4 @@ body footer .footer-container .footer-info {
 body footer .footer-container .footer-info span {
   font-size: 1.5vw;
   margin: 0.5vh 0;
-}
+}/*# sourceMappingURL=shop.css.map */

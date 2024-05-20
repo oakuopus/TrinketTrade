@@ -446,8 +446,9 @@ code {
 }
 footer {
   border-top: 2px solid $rose-pink;
-  background-color: #414A4C;
-  padding: 2vh 0;
+        background-color: black;
+        padding: 2vh 0;
+        color:$barbie-pink;
   .footer-container {
       display: flex;
       flex-direction: column;

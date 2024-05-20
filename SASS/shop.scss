@@ -1,6 +1,12 @@
 $rose-pink: #FF0F80;
 $barbie-pink: #EE49B5;
-
+@font-face {
+    font-family: myFont;
+    src: url(/Voguella.ttf);
+}
+html {
+    font-family: myFont;
+}
 body{
     margin: 0;
     color: black;
@@ -102,7 +108,7 @@ body{
                 .hotspottxt{
                     padding: 2px 4rem;
                     background-color: $rose-pink;
-                    font-size: 2.2vw;
+                    font-size: 2.1vw;
                     width: 12vw;
                     margin: auto;
                     margin-top: 1rem;
@@ -201,7 +207,7 @@ body{
                 .all-products{
                     padding: 2px 4rem;
                     background-color: $rose-pink;
-                    font-size: 2vw;
+                    font-size: 1.8vw;
                     width: 10.2vw;
                     margin: auto;
                     margin-top: 1rem;
@@ -263,8 +269,9 @@ body{
     }
     footer {
         border-top: 2px solid $rose-pink;
-        background-color: #414A4C;
+        background-color: black;
         padding: 2vh 0;
+        color:$barbie-pink;
         .footer-container {
             display: flex;
             flex-direction: column;

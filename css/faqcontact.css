@@ -434,8 +434,9 @@ code {
 
 footer {
   border-top: 2px solid #FF0F80;
-  background-color: #414A4C;
+  background-color: black;
   padding: 2vh 0;
+  color: #EE49B5;
 }
 footer .footer-container {
   display: flex;
@@ -468,4 +469,4 @@ footer .footer-container .footer-info {
 footer .footer-container .footer-info span {
   font-size: 1.5vw;
   margin: 0.5vh 0;
-}
+}/*# sourceMappingURL=faqcontact.css.map */

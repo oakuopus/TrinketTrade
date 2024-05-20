@@ -1,6 +1,12 @@
 $rose-pink: #FF0F80;
 $barbie-pink: #EE49B5;
-
+@font-face {
+    font-family: myFont;
+    src: url(/Voguella.ttf);
+  }
+html {
+      font-family: myFont;
+}
 body{
     margin: 0;
     color: black;
@@ -168,8 +174,9 @@ body{
     }
     footer {
         border-top: 2px solid $rose-pink;
-        background-color: #414A4C;
+        background-color: black;
         padding: 2vh 0;
+        color:$barbie-pink;
         .footer-container {
             display: flex;
             flex-direction: column;
