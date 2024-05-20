@@ -25,9 +25,11 @@ $(function() {
     $("#badge").on("click", function() {
         home();
     });
+    //for the timer system
     var days = 7
     var hours = 23
     var minutes = 59
+    //makes sure the timer updates every hour
     var timer = setInterval(countDown, 60000)
     function countDown() {
         minutes--

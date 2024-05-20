@@ -16,12 +16,14 @@
 </head>
 <body>
     <header>
-        <div class="head-container" style="z-index: 2;">
+        <!-- common header throughout the entire page -->
+        <div class="head-container">
             <div class="images">
+                <!--adds the images and logos-->
                 <img id="badge" src="./assets/badge logo.png" alt="TrinketTrade Logo" onclick="home()"><a href="./index.html"></a>
                 <img id="text" src="./assets/logo final.png" alt="Text Logo" onclick="home()"><a href="./index.html"></a>
             </div>
-            <button id="hamburger" style="background-color:#F2F3EB">|||</button>
+            <button id="hamburger">|||</button>
             <div class="dropped">
                 <span id="shop"><a href="./shop.html">Shop</a></span>
                 <span id="contact-us"><a href="./faqcontact.html">Contact/FAQ</a></span>
@@ -29,13 +31,14 @@
             </div>
         </div>
     </header>
-    <div class="verticalLine"></div>
     <div class="grid">
         <div class="rightGrid">
             <center><h1>Contact Us</h1></center>
             <!-- CODE PROVIDED BY https://codepen.io/dfitzy/pen/VepqMq -->
             <div id="container" style="margin-top: 6.3vh;">
+                <!--the entire form fo the contact-->
                 <form method="post" id="contact_form">
+                    <!--creates each and every section with its respective area-->
                   <div class="name">
                     <label for="name"></label>
                     <input type="text" placeholder="My name is" name="name" id="name_input" required>
@@ -73,6 +76,7 @@
             <center><h1>FAQ</h1></center>
 
             <div class="FAQQ" style="margin-top: 0.7vh;">
+                <!--start of the FAQ questions-->
                 <details open>
                     <summary>
                         How do I place an order?
