@@ -47,24 +47,20 @@ $(function() {
         $("#hours").text(hours + ":")
         $("#minutes").text(minutes)
     }
-});
-
-
-/* Check the location of each element */
-$('.content').each( function(i){
-  
-    var bottom_of_object= $(this).offset().top + $(this).outerHeight();
-    var bottom_of_window = $(window).height();
-    
-    if( bottom_of_object > bottom_of_window){
-      $(this).addClass('hidden');
-    }
-  });
+    /* Check the location of each element */
+    $('.content').each( function(i){
+        var bottom_of_object= $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).height();
+        
+        if( bottom_of_object > bottom_of_window){
+        $(this).addClass('hidden');
+        }
+    });
   
   
-  $(window).scroll( function(){
+    $(window).scroll( function(){
       /* Check the location of each element hidden */
-      $('.hidden').each( function(i){
+        $('.hidden').each( function(i){
         
           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
           var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -74,4 +70,13 @@ $('.content').each( function(i){
             $(this).animate({'opacity':'1'},700);
           }
       });
-  });
+    });
+    $("#bidL").on("click", function() {
+        var biddedValue = parseInt($("#biddedL").text(), 10);
+        var priceLeftValue = parseInt($("#price-left").text(), 10);
+        console.log(biddedValue)
+        if (biddedValue > priceLeftValue) {
+          $("#price-left").text(biddedValue);
+        }
+    });
+});
